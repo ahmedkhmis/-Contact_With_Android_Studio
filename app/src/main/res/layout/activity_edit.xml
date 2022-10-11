@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/back_style"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#302F2F"
+    tools:context=".Edit">
+
+    <TextView
+        android:id="@+id/textView2"
+        style="@style/style_titre1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Edit"
+        android:textColor="#FFFFFF"
+        android:textColorHighlight="#FFFFFF"
+        android:textColorLink="#FFFFFF" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/ed_rech_edit"
+            android:layout_width="317dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="recherche"
+            android:inputType="textPersonName"
+            android:textColorHint="#A5A5A5"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <ImageView
+            android:id="@+id/ed_rech_btn"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            app:srcCompat="@drawable/ic_baseline_search_24" />
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_edit"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

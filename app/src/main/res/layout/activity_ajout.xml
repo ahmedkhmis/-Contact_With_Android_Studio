@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/back_style"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#302F2F"
+    tools:context=".Ajout">
+
+    <TextView
+        android:id="@+id/textView3"
+        style="@style/style_titre1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="Ajouter"
+        android:textColor="#FFFFFF" />
+
+    <EditText
+        android:id="@+id/ed_name_ajout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:ems="10"
+        android:hint="Name"
+        android:inputType="textPersonName"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#A5A5A5" />
+
+    <EditText
+        android:id="@+id/ed_lastname_ajout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Last name"
+        android:inputType="textPersonName"
+        android:textColor="#FFFCFC"
+        android:textColorHint="#A5A5A5" />
+
+    <EditText
+        android:id="@+id/ed_phone_ajout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="35dp"
+        android:ems="10"
+        android:hint="Phone number"
+        android:inputType="phone"
+        android:textColor="#FFFCFC"
+        android:textColorHint="#A5A5A5" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_cancel_ajout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:backgroundTint="#C8AF2222"
+            android:text="Cancel" />
+
+        <Button
+            android:id="@+id/btn_ajout_ajout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:backgroundTint="#C8AF2222"
+            android:text="AJOUT" />
+    </LinearLayout>
+
+</LinearLayout>

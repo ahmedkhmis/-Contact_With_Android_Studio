@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    style="@style/back_style"
+    android:background="#302F2F"
+    tools:context=".MainActivity">
+
+    <TextView
+
+
+        style="@style/style_titre1"
+        android:text="@string/titre_app"
+        android:textColor="#FFFEFE" />
+
+    <TextView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:fontFamily="sans-serif"
+        android:text="Email"
+        android:textColor="#F3E9E9"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/ed_mail_auth"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="foulen@foulen.com"
+        android:inputType="textEmailAddress"
+        android:textColorHint="#A5A5A5" />
+
+    <TextView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:fontFamily="sans-serif"
+        android:text="Pssword"
+        android:textColor="#F3E9E9"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/ed_pwd_auth"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="*********"
+        android:inputType="textPassword"
+        android:textColorHighlight="#C1C0C0"
+        android:textColorHint="#A5A5A5" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_val_auth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:backgroundTint="#C8AF2222"
+            android:text="Validate" />
+
+        <Button
+            android:id="@+id/btn_qte_auth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:backgroundTint="#C8AF2222"
+            android:text="Cancel"
+            app:iconTint="#354DCF" />
+    </LinearLayout>
+</LinearLayout>
