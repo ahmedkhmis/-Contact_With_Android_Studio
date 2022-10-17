@@ -23,6 +23,7 @@ public class MyContactRecycleAdapter extends RecyclerView.Adapter<MyContactRecyc
         this.data = data;
     }
 
+
     @NonNull
     @Override
     public MyContactRecycleAdapter.MyViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
